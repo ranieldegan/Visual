@@ -3,10 +3,14 @@
   <div class="container-fluid">
     <div class="row">
       <main role="main" class="col error404">
-        <h1><%= error.status %></h1>
-        <h3><%= message %></h3>
+        <div class="error-message">
+          <div class="row">
+            <h1><%= error.status %></h1>
+              <h3><%= message %></h3>
+          </div>
+        </div>
       </main>
-    </div> <!-- end .row --> 
+    </div> <!-- end .row -->
   </div><!-- end .container-fluid -->
 </div><!-- end #main -->
 <%- include('partials/footer'); %>
